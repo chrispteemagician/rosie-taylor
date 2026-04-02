@@ -421,6 +421,52 @@
 
     .milo-text p strong { color: var(--warm); }
 
+    .milo-pack-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.8rem;
+      margin: 2rem 0;
+    }
+
+    .milo-pack-item {
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      position: relative;
+    }
+
+    .milo-pack-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .milo-pack-label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(58,37,24,0.85));
+      color: rgba(255,248,242,0.95);
+      font-size: 0.75rem;
+      padding: 1.2rem 0.7rem 0.6rem;
+    }
+
+    .roxy-laptop {
+      margin: 2.5rem 0 1.5rem;
+      border-radius: 16px;
+      overflow: hidden;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 8px 32px var(--shadow);
+    }
+
+    .roxy-laptop img { width: 100%; display: block; }
+
+    .roxy-laptop p {
+      background: var(--cream);
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 0.7rem;
+      font-style: italic;
+    }
+
     .milo-stats {
       display: flex;
       gap: 2rem;
@@ -871,6 +917,25 @@
           <p>This is <strong>Milo</strong> — fox red Labrador, South Gloucestershire's most emotionally devastating animal, and the undisputed star of this website. He arrived at 15 weeks old and immediately understood his assignment: maximum charm, kisses for everyone, total internet domination.</p>
           <p>Milo is a <strong>dog influencer in the making</strong> — and if you've ever seen a single clip of him, you already know why. He loves <strong>Cowboy</strong> (son of the legendary chaos agent <strong>Roxy</strong>) with his whole heart, and he gives out kisses like they're going out of fashion. You cannot be sad near him. It's physically impossible.</p>
           <p>Roxy technically wants to eat him. She absolutely does not mean it. It's complicated. It's love.</p>
+          <div class="milo-pack-grid">
+            <div class="milo-pack-item">
+              <img src="images/milo-hat.jpg" alt="Milo with his hat on" />
+              <div class="milo-pack-label">Day one energy 🎩</div>
+            </div>
+            <div class="milo-pack-item">
+              <img src="images/jake-milo.jpg" alt="Milo and Jake" />
+              <div class="milo-pack-label">Jake. Milo's pillow. 🖤</div>
+            </div>
+            <div class="milo-pack-item">
+              <img src="images/roxy-milo.jpg" alt="Roxy and Milo" />
+              <div class="milo-pack-label">First meeting. Roxy was suspicious. 🍂</div>
+            </div>
+            <div class="milo-pack-item">
+              <img src="images/cowboy.jpg" alt="Cowboy" />
+              <div class="milo-pack-label">Cowboy. Confirmed: looks like a cow. 🐄</div>
+            </div>
+          </div>
+
           <div class="milo-stats">
             <div class="milo-stat">
               <div class="milo-stat-num">1.5K</div>
@@ -895,11 +960,7 @@
           </div>
         </div>
         <div class="milo-photo">
-          <div class="milo-photo-placeholder">
-            <span class="icon">🐾</span>
-            Milo's photo coming soon<br />
-            <small>Drop your best shot in images/milo.jpg</small>
-          </div>
+          <img src="images/milo.jpg" alt="Milo" />
         </div>
       </div>
     </div>
@@ -964,6 +1025,11 @@
             <span class="manifesto-line-icon">🌿</span>
             <p><strong>Kindness is infrastructure.</strong> Every beautiful wedding, every warm moment, every viral clip of a lab going absolutely feral for a stick — it all adds up. The world gets warmer one ember at a time.</p>
           </div>
+        </div>
+
+        <div class="roxy-laptop">
+          <img src="images/roxy-laptop.jpg" alt="Roxy helping build this website" />
+          <p>Roxy. Supervised the entire build. April 2nd 2026.</p>
         </div>
 
         <div class="feelfamous-badge">
